@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "Pointers.C": "cpp",
+    "arithmatic.C": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}
