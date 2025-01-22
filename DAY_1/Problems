@@ -4,11 +4,27 @@ problems:
 int arr[] = {10,9,8,7,6,5}
 swap(int* a, int *b)
  * try bubble sort as next exercise
+ -> O(N^2)
+ -> reverse an array using swap:
+int arr[] = {10,9,8,7,6,5};
+// after reversal
+arr[] = {5,6,7,8,9,10};
 
-2) iterate an array using int pointer
+2) find the size of an array using pointers
+int arr[] = {10,  9,   8,    7,   6,  5}
+             100, 102, 104, 106, 108, 110
+             100 -> 111 = 12 bytes
+             11 - 100
+// sizeof(arr)/sizeof(arr[0])
+// 12/2 = 6 elements
+
+int* start = &arr[0];
+int* end = &arr[5];
+printf("size = %d", (end - start) + 1);
+
+3) iterate an array using int pointer
 int arr[] = {10,9,8,7,6,5}
 
-3) find the size of an array using pointers
-int arr[] = {10,9,8,7,6,5}
+
 
 
