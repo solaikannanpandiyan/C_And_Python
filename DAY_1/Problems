@@ -1,0 +1,14 @@
+problems:
+
+1) write a swap function using pointer
+int arr[] = {10,9,8,7,6,5}
+swap(int* a, int *b)
+ * try bubble sort as next exercise
+
+2) iterate an array using int pointer
+int arr[] = {10,9,8,7,6,5}
+
+3) find the size of an array using pointers
+int arr[] = {10,9,8,7,6,5}
+
+
