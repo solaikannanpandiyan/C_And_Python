@@ -1,7 +1,12 @@
 {
   "files.associations": {
     "Pointers.C": "cpp",
-    "arithmatic.C": "cpp"
+    "arithmatic.C": "cpp",
+    "Solution.C": "cpp",
+    "ArrayPointer.C": "cpp",
+    "TypesofPointer.C": "cpp",
+    "__config": "cpp",
+    "pointersAdvanced.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
