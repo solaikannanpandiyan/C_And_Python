@@ -48,6 +48,9 @@ int main() {
     printf("dangle %p\n", dangle);
     printf("dangle %d\n", *dangle);
 
+    // https://thebettertomorrow.in -> students -> instant feedback
+    // or google bettertomorrow.in -> students -> instand feedback
+
     
     return 0;
 }

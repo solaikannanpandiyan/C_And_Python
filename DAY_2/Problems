@@ -1,0 +1,29 @@
+1) Write a program to merge two sorted arrays into a third sorted array.
+int arr1[5] = {3, 4, 7, 9, 10}
+int arr2[5] = {1, 2, 5, 6, 8}
+output:
+[1,2,3,4,5,6,7,8,9,10]
+
+2) Write a program to find the frequency of each element in an array.
+int arr1[5] = {1, 4, 7, 9, 10}
+// all numbers are always lesser than 10 
+// arr[i] in range[0,9] for any arr[i] for any 0 <= i < n
+// Tip: use an array as frequency counter
+
+3) Shift All Zeros to the End of the Array
+int arr[5] = {0,1,0,1,0}
+// after moving the zeros
+arr[5] = {0,0,0,1,1}
+
+4) right rotate an array 
+int arr1[5] = {1, 4, 7, 9, 10}
+// Examples:
+rotate 1 time to right
+int arr1[5] = {10, 1, 4, 7, 9}
+rotate 2 time to right
+int arr1[5] = {9, 10, 1, 4, 7}
+
+5) find the missing no in an array of positive numbers
+int arr[5] = {1, 2, 3, 5, 6}
+// missing number is 4 here
+
