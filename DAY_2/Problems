@@ -30,3 +30,34 @@ int arr[5] = {1, 2, 3, 5, 6}
 ASSESSMENT:
 click on the below link to attend the ASSESSMENT:
 https://tinyurl.com/KCGAssessment4
+
+
+6) total sum, rowwise and column wise sum
+int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
+
+7) create a 2D array find the maximum element
+int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
+
+8) rotate a matrix by 90 degree
+// inmemory
+int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
+1 2 3 
+4 5 6
+7 8 9
+output:
+7 4 1
+8 5 2
+9 6 3
+
+9) transpose of a matrix:
+// inmemory is hard
+// extra
+input:
+int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
+1 2 3 
+4 5 6
+7 8 9
+output:
+1 4 7
+2 5 8
+3 6 9
