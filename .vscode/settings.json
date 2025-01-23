@@ -9,7 +9,8 @@
     "pointersAdvanced.C": "cpp",
     "multidimensionalarray": "cpp",
     "MultidimensionalArray.C": "cpp",
-    "PassingValues.C": "cpp"
+    "PassingValues.C": "cpp",
+    "mutlidimesionalarray.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
