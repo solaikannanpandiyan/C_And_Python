@@ -6,7 +6,10 @@
     "ArrayPointer.C": "cpp",
     "TypesofPointer.C": "cpp",
     "__config": "cpp",
-    "pointersAdvanced.C": "cpp"
+    "pointersAdvanced.C": "cpp",
+    "multidimensionalarray": "cpp",
+    "MultidimensionalArray.C": "cpp",
+    "PassingValues.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }
