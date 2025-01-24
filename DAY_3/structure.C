@@ -6,7 +6,11 @@
 
 
 typedef struct std{char name[10];int rollno;float mark;} Student;
+typedef struct node{int value;struct node* next;} Node;
+
 typedef int Integer;
+
+
 
 
 // struct class{
@@ -30,9 +34,9 @@ void setvalue(Student std){
     std.mark = 45.0;
 }
 
-// void setvalueint(int* x){
-//     *x = 10;
-// }
+void setvalueint(int* x){
+    *x = 10;
+}
 
 void setvalueaddress(Student *std){
     // both are equivalent
@@ -42,6 +46,13 @@ void setvalueaddress(Student *std){
     // std[1] is equivalent to *(std+1)
 }
 
+void printlllist(Node* head){
+    while(head != NULL){
+        printf("Node(value: %d, address: %p) -> ",head->value, head->value);
+        head = head->next;
+    }
+    printf("NULL");
+}
 
 
 int main() {
@@ -62,14 +73,25 @@ int main() {
         printstudent(arrstudent[i]);
     }
 
+    Node nd = {1,NULL};
+    printf("%d\n", nd.value);
+    printf("%p\n", nd.next);
+
+    Node nd4 = {4,NULL};
+    Node nd3 = {3,&nd4};
+    Node nd2 = {2,&nd3};
+    Node nd1 = {1,&nd2};
+    
+    printlllist(&nd1);
+
     // struct
     // struct pointer
     // array structure
-    /
+    // self referential structure
 
     // printf("%lu\n", sizeof(s1.mark));
     // printf("%lu\n", sizeof(s1.name));
-    // printf("%lu\n", sizeof(s1.mark));
+    // printf("%lu\n", sizeof(s1.rollno));
     // printf("%lu\n", sizeof(s1));
     
 }

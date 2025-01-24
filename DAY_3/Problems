@@ -5,3 +5,29 @@ find 1 , 2 and 3 rd rank students
 2) create below structure relationship
 college structure -> class structure -> student structure
 
+3) use # define to declare a struct
+
+4) reverse a linked list:
+1 -> 2 -> 3 -> 4 -> 5
+reversed:
+5 -> 4 -> 3 -> 2 -> 1
+
+5) merge two sorted linkedlist:
+1 -> 3 -> 9
+4 -> 5 -> 10
+ouput:
+1 -> 3 -> 4 -> 5 -> 9 -> 10
+
+6) find if there is loop in a linkedlist:
+1 -> 3 -> 9 -> 1
+ouput:
+True
+1 -> 3 -> 9
+ouput:
+False
+
+# 7) use linkedlist to build a stack:
+# stack
+
+# 8) use linkedlist to build a queue:
+# queue
