@@ -42,6 +42,7 @@ int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
 
 8) rotate a matrix by 90 degree
 // inmemory
+// use extra space
 int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
 1 2 3 
 4 5 6
@@ -53,7 +54,7 @@ output:
 
 9) transpose of a matrix:
 // inmemory is hard
-// extra
+// use extra space
 input:
 int arr[][3] = {{1,2,3}, {4,5,6}, {7,8,9}};
 1 2 3 
