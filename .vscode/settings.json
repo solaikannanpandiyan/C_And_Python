@@ -10,7 +10,9 @@
     "multidimensionalarray": "cpp",
     "MultidimensionalArray.C": "cpp",
     "PassingValues.C": "cpp",
-    "mutlidimesionalarray.C": "cpp"
+    "mutlidimesionalarray.C": "cpp",
+    "dynamicmemory.C": "cpp",
+    "structure.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled"
 }

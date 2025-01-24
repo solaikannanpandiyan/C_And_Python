@@ -1,0 +1,7 @@
+1) create 5 students with marks 
+77.0, 99.0, 85.8, 75.3, 66.0 -> 
+find 1 , 2 and 3 rd rank students
+
+2) create below structure relationship
+college structure -> class structure -> student structure
+
