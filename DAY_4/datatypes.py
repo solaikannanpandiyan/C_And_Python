@@ -1,6 +1,6 @@
 # from .pythonbasics import printformat
     
-    
+import sys as s
 def examplelen(obj):
     return obj.__len__()
     
@@ -11,85 +11,55 @@ if __name__ == "__main__":
     # 8 4 2 1
     # 1 0 1 0
     # print(a)
-    
+    s.maxsize()
     # dunder methods or magic methods
     a = -10.5 
     
     print(a.__floor__())
     # a = [1,2,3,4,5] 
     a = "hello"
+    
     # how inbuild methods works using dunder or magic methods
     # use magic or dunder to work
-    print(examplelen(a))
-    print(a.__len__())
+    # print(examplelen(a))
+    # print(a.__len__())
+
+    var1 = "hello"
+    var2 = "world"
+    # var1  = var1.upper()
+    # array | list, string -> interview 
+    print(var1.upper())
+    print(var1.isupper())
+    print(var1 + var2)
+    print()
+
+    # python advantage
+    # very good prototyping language -> low level design:  http implemention, cache, redis(key value), simple database 
+    # very good interview language -> product - > language agnostic 
+    # python -> performance improvment ->
+    # GIL lock (python performace backslash)
+    # 3 ways to do things better, 
+    # multithreading(inefficient due GIL), -> for io
+    # multiprocessing(faster), -> for cpu processing
+    # asyncio(efficient) but not always possible -> fastapi(multi-processing and asyncio)
+    # verh high -> 1 -> datascience/ dataengineering -> AI/ML
+    #   python is 3% -> core concepts -> pandas, numpy, pyspark(distrubed), | cloudserver data
+    # high -> 2 -> support enginerring, automation,  scripting, webscrapping, devops(good opportunities)(ansible, kubernetes, docker, jenkins, linux fundamentals)
+    # mediocre -> 3 -> web developer -> django, fastapi(rest api), flask -> sparse (startups, or midlevel product) -> not too much recommended
+
+    # problem solving:
+    # lot inbuilt function, clean code, simple sytax
+    # logic solve -> |  implementation simple
+
+    # disadvantage:
+    # tortoise level slow -> less efficient
+    # heavy memory usage -> less efficient
+    # job opportunities -> money -> not much unless u go into datascience 
+    # or devops that required learning more technologies and concepts
+
+    
+    
    
-    # printformat(a)
-    # a = 4.4
-    # printformat(a)
-    # a = 3 + 4j
-    # printformat(a)
-    
-    # # random address ->hashfunction -> unique number
-    # # Boolean
-    # a = True # both literal and keyword
-    # a = False # both literal and keyword
-    # a = None 
-    # a
-    
-    # # # String
-    # a = 'h'
-    
-    # # Sequence
-    # # List -> ordered
-    # a = [1 , 'a', 5.5]
-    # # xdynamic/static -> size runtime automically increased
-    # # xhetorogeneous/homogenous -> can contain any type of data
-    # # xmutuable/immutable -> mutable
-    # # [] -> delimiter
-    # # , -> delimiter
-    # # 1 -> int
-    # # 'a' -> str
-    # # 5.5 -> float
-    # printformat(a)
-    # # Tuple -> ordered
-    # a = (1 , 'a', 5.5)
-    # # xheterogeneous
-    # #-> dynamic/xstatic
-    # #-> ximmutable
-    
-    # printformat(a)
-    # # Set -> unordered
-    # a = {1, 2, 'a'}
-    # # sample hash value: {1001, 1003, 1004} // also a number
-    # # [1, 3, 4]
-    # # 'a' -> 1004
-    # # data -> consitent hashing hash function -> unqiue hashvalue
-    # # no duplicates
-    # # 
-    # # xdynamic/static -> size runtime automically increased
-    # # xhetorogeneous/homogenous -> can contain any type of data
-    # # xmutuable/immutable -> mutable
-    # printformat(a)
-    
-    # # # Mapping
-    # # Dict -> key, value -> very very common, very important -> 90% problem
-    # # othername: hashmap, map, dict, 
-    # a = {1 : 'one', 2: 'two', 3:'three', 4: 1.1}
-    # # sample hash value: {1001, 1003, 1004} // also a number
-    # # 'one' 'two' 'three'
-    # # ll      ll     ll
-    # #  ^       ^      ^
-    # # [1,       3,    4]
-    # # 'a' -> 1004
-    # # data -> consitent hashing hash function -> unqiue hashvalue
-    # # no duplicate keys
-    # # 
-    # # xdynamic/static -> size runtime automically increased
-    # # xhetorogeneous/homogenous -> can contain any type of data
-    # # xmutuable/immutable -> mutable
-    # printformat(a)
-    
-    # # # print(id("hello"))
     
     
     
