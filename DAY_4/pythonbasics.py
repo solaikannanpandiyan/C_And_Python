@@ -71,15 +71,34 @@ if __name__ == "__main__":
     printformat(a)
     # Set -> unordered
     a = {1, 2, 'a'}
+    # sample hash value: {1001, 1003, 1004} // also a number
+    # [1, 3, 4]
+    # 'a' -> 1004
+    # data -> consitent hashing hash function -> unqiue hashvalue
+    # no duplicates
+    # 
     # xdynamic/static -> size runtime automically increased
     # xhetorogeneous/homogenous -> can contain any type of data
     # xmutuable/immutable -> mutable
     printformat(a)
     
     # # Mapping
-    # # Dict
-    # a = {1 : 'one', 2: 'two', 3:'three'}
-    # printformat(a)
+    # Dict -> key, value -> very very common, very important -> 90% problem
+    # othername: hashmap, map, dict, 
+    a = {1 : 'one', 2: 'two', 3:'three', 4: 1.1}
+    # sample hash value: {1001, 1003, 1004} // also a number
+    # 'one' 'two' 'three'
+    # ll      ll     ll
+    #  ^       ^      ^
+    # [1,       3,    4]
+    # 'a' -> 1004
+    # data -> consitent hashing hash function -> unqiue hashvalue
+    # no duplicate keys
+    # 
+    # xdynamic/static -> size runtime automically increased
+    # xhetorogeneous/homogenous -> can contain any type of data
+    # xmutuable/immutable -> mutable
+    printformat(a)
     
     # # print(id("hello"))
     
