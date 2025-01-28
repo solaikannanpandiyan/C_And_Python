@@ -51,3 +51,22 @@ Used to combine conditional statements.
 | `and`    | True if both conditions are true       | `(5 > 3) and (2 < 4)` | `True`  |
 | `or`     | True if at least one condition is true | `(5 > 3) or (2 > 4)`  | `True`  |
 | `not`    | Reverses the result                    | `not (5 > 3)`         | `False` |
+
+
+2) implement fizzbuzz logic
+take no x,
+case 1: if x is divisible by 3 alone print "fizz"
+case 2: if x is divisible by 5 alone print "buzz"
+case 3: if x is divisible by 3 and 5 print "fizzbuzz"
+case 4: if x is not divisible by both 3 and 5 print "not divisible"
+
+3) implement pagination using below
+for loop
+range
+break
+continue
+consider 100 pages you need start printing pages from start to end
+if start = 20, end = 27 print pages 20 -> 27 
+
+
+
