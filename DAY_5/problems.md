@@ -1,10 +1,13 @@
 1. build a calculator function:
-   def calculate(x, y, operation):
+
+```python
+def calculate(x, y, operation):
    if operation == "*":
    return x*y # continue logic
 
 x = calculate(2,3,"\*")
 print("output : ",x)
+```
 
 # should work for all below opertions
 
