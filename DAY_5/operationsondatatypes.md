@@ -50,9 +50,9 @@ Used to combine conditional statements.
 Operate at the bit level.
 
 | Operator | Example Usage | Applicable Data Types |
-| -------- | ------------- | --------------------- | --- | -------- |
+| -------- | ------------- | --------------------- | 
 | `&`      | `a & b`       | Integers              |
-| `        | `             | `a                    | b`  | Integers |
+| `\|`     | `a \| b`      | Integers              | 
 | `^`      | `a ^ b`       | Integers              |
 | `~`      | `~a`          | Integers              |
 | `<<`     | `a << b`      | Integers              |
@@ -118,8 +118,8 @@ Compare memory locations.
 #### **Set Operators**
 
 | Operator | Example Usage | Description          |
-| -------- | ------------- | -------------------- | ----- | ----- |
-| `        | `             | `set1                | set2` | Union |
+| -------- | ------------- | -------------------- | 
+| `\|`     | `set1 \| set2`| Union                | 
 | `&`      | `set1 & set2` | Intersection         |
 | `-`      | `set1 - set2` | Difference           |
 | `^`      | `set1 ^ set2` | Symmetric Difference |
