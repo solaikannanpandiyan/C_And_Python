@@ -60,7 +60,7 @@ case 2: if x is divisible by 5 alone print "buzz"
 case 3: if x is divisible by 3 and 5 print "fizzbuzz"
 case 4: if x is not divisible by both 3 and 5 print "not divisible"
 
-3) implement pagination using below
+3) Implement pagination using below
 for loop
 range
 break
@@ -68,5 +68,16 @@ continue
 consider 100 pages you need start printing pages from start to end
 if start = 20, end = 27 print pages 20 -> 27 
 
+Additional: do the same using while loop
 
+4) print numbers in reverse from 100, skips onces divisible by 3 and 5,
 
+5) print below pattern using loops:
+even places are reversed
+odd places are normal
+
+1 2 3 4 5
+5 4 3 2 1
+1 2 3 4 5
+5 4 3 2 1
+1 2 3 4 5

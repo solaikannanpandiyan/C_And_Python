@@ -11,9 +11,16 @@
 # which is greater -1 or -3 ? -1
 
 
+def algorithm():
+    pass
+
+algorithm()
+
+
 for i in range(1,5): # 1, 2, 3, 4
     # print(i)
     pass
+    
 
 for i in range(1,5,2): # 1, 3
     # print(i)
