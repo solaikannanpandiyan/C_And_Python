@@ -121,11 +121,11 @@ printformat(str1 > str2) # False
 str1 = "" 
 rev = str1[::-1]
 
-# for character in rev:
-#     print(character)
+for character in rev:
+    print(character)
 
-# character = ""
-# print(character in str1)
+character = ""
+print(character in str1)
 
 # while character in rev:
 #     print(character)\n
@@ -147,9 +147,13 @@ print(r"asofjqoi\n\n\\'''''232''98223")
 # "".encode("utf-8")
 print(b"hello")
 
+
+# getting input
+
 # input(stdin) -> python program -> output(stdout)
 inputdata = input("please enter ur name: ") # user data from stdin
 printformat(inputdata)
 
-# getting input
+# type casting
+
 
