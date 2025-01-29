@@ -128,9 +128,26 @@ rev = str1[::-1]
 # print(character in str1)
 
 # while character in rev:
-#     print(character)
+#     print(character)\n
 
 # escape characters or raw string
+# wirwqoioav13417~`002\]`
+# \n
+print("apple a\nnbanana")
+print("Good\t\tday")
+print("Good day, \"life is beautiful\"")
+print("Good day, \'life is beautiful\'")
+print("Good day,\\tlife is beautiful\\n")
+# print("\a")
+print("Good day   ,\vhwo are you!.")
+# https://docs.python.org/3/reference/lexical_analysis.html
+# rawstring
+print(r"asofjqoi\n\n\\'''''232''98223")
+# byte string
+# "".encode("utf-8")
+print(b"hello")
 
+# input(stdin) -> python program -> output(stdout)
 
 # getting input
+
