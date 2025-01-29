@@ -88,18 +88,49 @@ printformat(strng[4:1:1]) #  error | xnoerror ""
 
 # concatenation
 str1 = "hello"
-str2 = "wor"
+str2 = "world"
+printformat(str1 + str2)
+printformat(str1.__add__(str2))
 
 # repetition
+str1 = "hello"
+printformat(str1 * 3)
+printformat(str1.__mul__(3))
 
-# lenght of string
+# length of string
+printformat(len(str1))
+printformat(str1.__len__())
 
 # membership
+str1 = "apple is good for health"
+printformat("good for" in str1)
 
-# comparison
+# comparison -> lexicographical
+str1 = "apple" # latter is always larger
+str2 = "america" # earlier is always smaller
+# a --->   m    n   o    p
+# 97      109 110  111  112
+printformat(str1<str2) # False | True
+# 112 < 109 = false
+printformat(str1 == str2) # False
+# 112 < 109 = false
+printformat(str1 > str2) # False
+# 112 > 109 = false
 
 # iteration
+str1 = "" 
+rev = str1[::-1]
+
+# for character in rev:
+#     print(character)
+
+# character = ""
+# print(character in str1)
+
+# while character in rev:
+#     print(character)
 
 # escape characters or raw string
+
 
 # getting input
