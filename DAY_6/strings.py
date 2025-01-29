@@ -60,19 +60,31 @@ def printformat(a):
 
 # accessing character
 strng = "apple"
-printformat(strng[0])
-printformat(strng[3])
-
+#        012345
+#      -5-4-3-2-1
+# strng = "green apple"
+# len() -> number -2 
+# [] -> array
+printformat(strng[0]) # a
+printformat(strng[3]) # l
+printformat(strng[-1]) # e -> negative indexing
+# printformat(strng[10]) # -> error
+# printformat(strng[-10]) # -> error
 
 # string slicing
-# strng = "apple"
-# printformat(strng)
-# printformat("apple")
-# string slicing [start:stop:step]
-# printformat(strng[0:3])
-# printformat(strng[::-1])
-# printformat(strng[:100])
+strng = "apple"
+printformat(strng)
+printformat("apple")
 
+# string slicing [start:stop:step] -> range(), step: 1
+printformat(strng[0:3]) # app 
+printformat(strng[::-1]) # elppa
+printformat(strng[:100]) # error | xapple | orange
+printformat(strng[4:1:-1]) # lpp | lp | xelp | elpp
+# a p p l e
+# 0 1 2 3 4
+printformat(strng[1:4:-1]) # elpp | error | xnoerror ""
+printformat(strng[4:1:1]) #  error | xnoerror ""
 
 # concatenation
 str1 = "hello"
