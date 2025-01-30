@@ -78,8 +78,22 @@ To be covered separately.
 
 ## Typing Skill:
 
-- practice everyday during free make it your hobby
+1. Practice every day when you are free doing mindless tasks (YouTube, reels, etc.), make it your hobby.
+2. Focus on accuracy; speed comes later.
+3. Take occasional breaks to relax; do not obsess over it.
+4. Anything above 60 WPM is great.
+5. **Read Blogs**
 
-## counselling - session
+   - [Reach 100 WPM](https://roosterdan.medium.com/how-to-type-100-words-per-minute-a780fd80fd27)
+   - [Motivation 167 WPM](https://www.youtube.com/watch?v=4GDusA21cEA)
 
-[Counselling](https://survey.changebegins.ai)
+6. **Top Sites to Practice:**
+   - [10fastfingers](https://10fastfingers.com/)
+   - [Monkeytype](https://monkeytype.com/)
+   - [TypingClub](https://www.typingclub.com/sportal/)
+   - [Keybr](https://www.keybr.com/)
+
+## Product Companies Sites:
+
+- [Product Companies Inside India](https://github.com/Kaustubh-Natuskar/moreThanFAANGM/tree/main)
+- [Product Companies Abroad Hiring from India](https://gist.github.com/idontknowjs/22f3257bed32dd3ab99ff22316e51eb8)
