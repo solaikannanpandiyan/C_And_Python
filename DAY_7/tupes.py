@@ -1,8 +1,6 @@
-# LIST CONCEPTS
+# Tuples CONCEPTS
 
 # definition
-varlst = [1,2, ('a'),{'b':12},[1,3,4]]
-print(varlst)
 
 # indexing
 

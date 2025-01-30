@@ -149,11 +149,13 @@ print(b"hello")
 
 
 # getting input
-
 # input(stdin) -> python program -> output(stdout)
 inputdata = input("please enter ur name: ") # user data from stdin
 printformat(inputdata)
 
 # type casting
+
+
+# immutability
 
 
