@@ -69,10 +69,34 @@ for key in vardct.keys():
 for value in vardct.values():
      printformat(value)
 
-# Dict Comprehensions
+# Dict Comprehensions -> list, tuples, set
+print("Dict Comprehensions -")
+# ^ -> xor
+# ** -> power
+vardict = {i : i**3 for i in range(10)}
+print(vardict)
+input = [(1,3),(2,3),(3,4)] # list of tuples
+vardict = dict(input)
+print(vardict)
 
+# Nested Dict
+# i : i**3 -> expression
+vardict = {i : i**3 for i in range(3)}
+# {i : i**3, i : i**3, i : i**3}
+# {0 : 0**3, 1 : 1**3, 2 : 2**3}
+# {0 : 0, 1 : 1, 2 : 8}
+print(vardict)
+vardict = {j: {i : j for i in range(3)} for j in range(3)} # 
+print(vardict)
+# {{i : j for i in range(3)}, {i : j for i in range(3)}, {i : j for i in range(3)}}
+# {{i : 0, i : 0, i : 0}, {i : 1, i : 1, i : 1}, {i : 2, i : 2, i : 2}}
+# {{0 : 0, 1 : 0, 2 : 0}, {0 : 1, 1 : 1, 2 : 1}, {0 : 2, 1 : 2, 2 : 2}}
+# {    
+#   {0:0,1:0,2:0}, | {0:0,0:1,0:2}
+#   {1:0,1:1,1:1},
+#   {1:0,1:1,1:2},
+# }
 
-# Nested Lists
 
 # Shallow Copy
 
@@ -80,4 +104,4 @@ for value in vardct.values():
 
 # Inbuilt methods -> len, filter, map, sorted
 
-# operations ->  concat and repition
+# operations ->  |
