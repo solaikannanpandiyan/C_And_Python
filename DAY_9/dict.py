@@ -4,6 +4,9 @@
 varlst = [1,2, ('a'),{'b':12},[1,3,4]]
 print(varlst)
 
+# see the doc
+
+
 # indexing
 
 # slicing
