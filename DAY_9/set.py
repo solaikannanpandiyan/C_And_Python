@@ -1,4 +1,4 @@
-# SET CONCEPTS
+# SET CONCEPTS -> only unique keys
 
 def printformat(a):
     print()
@@ -14,13 +14,14 @@ varset = set()
 printformat(varset)
 varset = {1,3.3,"hello",'2'}
 printformat(varset)
-# varset = {[1,2,3]} # mutability and hashable
+# varset = {[1,2,3]} # mutability and not hashable
 # printformat(varset)
-# varset = {{1,2,3}} # mutability and hashable
+# varset = {{1,2,3}} # mutability and not hashable
 # printformat(varset)
 # varset = {1,2,{1:1,2:2,3:3}} # mutability and hashable
 # printformat(varset)
-varset = {1,2,(1,2,3)} # immutable <-> hashable
+varset = {1,2,(1,2,3)} # immutable <-> hashable (consitent)
+# we can store: numbers, string, tuple of  string, tuple, or number
 printformat(varset)
 
 # indexing - no ordering -> no subscript operation
@@ -82,9 +83,9 @@ print(b)
 # Inbuilt methods -> len, filter, map, sorted
 set1 = {i for i in range(10)}
 print("len : ",len(set1))
-print(list(set1)) # list, set, tuple, dict
-# filter(set1, lambda x: x%2 ==0)
-# map(set1, lambda x: print(x))
+print("list : ",list(set1)) # list, set, tuple, dict
+print("filter : ",list(filter(lambda x: x%2 ==0, set1)))
+print("map : ",list(map(lambda x: print(x,sep=" "),set1)))
 print("sorted : ", list(sorted(set1)) )
 # print("filter : ",list())
 
@@ -100,3 +101,5 @@ print(set1 & set2)  # 3
 print(set1 - set2)  # 1,2
 print(set1 ^ set2)  # 1,2,4,5
 print((set1 - set2) | (set2 - set1)) # 1,2,4,5
+# print(set1 + set2) -> not possible
+# print(set1 * 2) -> not possible
