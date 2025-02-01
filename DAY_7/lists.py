@@ -174,4 +174,17 @@ lst.sort(key=lambda x: len(x),reverse=True) # inplace sorting
 printformat(lst)
 lst = sorted(lst, key=lambda x: len(x), reverse=True)
 printformat(lst)
-lst = [["varun",1], ["ajay",3], ["kamal",4]]
+lst = [["varun",4], ["ajay",0], ["kamal",1]]
+lst = sorted(lst, key=lambda x: x[0]) # correct or any other approach
+printformat(lst)
+
+
+# how to do it
+lst = [{5:"kamal"}, {9:"varun"}, {0:"varun"}]
+for i in lst:
+    print(list(i.keys())[0])
+# lst = sorted(lst, key=lambda x: list(x.keys())[0]) # correct or any other approach
+# printformat(lst)
+
+
+

@@ -1,4 +1,4 @@
-# LIST CONCEPTS
+# DICT CONCEPTS
 
 # definition
 varlst = [1,2, ('a'),{'b':12},[1,3,4]]
@@ -25,4 +25,3 @@ print(varlst)
 # Inbuilt methods -> len, filter, map, sorted
 
 # operations ->  concat and repition
-

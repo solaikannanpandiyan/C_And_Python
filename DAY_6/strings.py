@@ -150,12 +150,75 @@ print(b"hello")
 
 # getting input
 # input(stdin) -> python program -> output(stdout)
-inputdata = input("please enter ur name: ") # user data from stdin
-printformat(inputdata)
+# inputdata = input("please enter ur name: ") # user data from stdin
+# printformat(inputdata)
 
-# type casting
+# type casting - implicit | explicit
+# print("string" + 3)
+print("number ", str(3))
+# inbuild function
+# str()
+# int()
+# float()
+inpt = '13'
+printformat(inpt)
+# precheck and convert
+# if inpt.isdigit():
+#     inpt = int(inpt)
+#     printformat(inpt)
+# else:
+#     print("not a valid number")
+
+# exception handling
+# try:
+#     inpt = int(inpt)
+#     printformat(inpt)
+# except Exception as err: # alias
+#     print(f"value is not int{err}")
+# finally:
+#     # to execute a closeup code, that should always execute
+#     print("this is finally always executed")
+
+# inputdata = input("please enter a value: ") # user data from stdin
+# printformat(inputdata)
+# inputdata = str(int(inputdata))
+# printformat(inputdata)
+
+# valid
+# 4 numbers seperated by .(delimiter)
+# each number should be between 0 - 255
+# 0.0.0.0 -> min valid
+# 255.255.255.255 -> max valid
 
 
 # immutability
+# different address on each manipulation
+# python string -> mutable/ximmutable
+# x = "hello" # string pool | interning 
+# y = "hello"
+# printformat(x)
+# printformat(y)
+# printformat("hello")
+
+
+# # x = x + " world"
+# x = "Hello world% asef! af"
+# y = "Hello world% asef! af"
+# printformat(x)
+# printformat(y)
+
+# c = "hello world, this is a long string"
+# d = "hello world, this is a long string"
+# print(c is d)  # Output: False
+# x = "hi"
+# printformat(x)
+# x[0] = 'b' -> cannot change
+
+x = "world"
+printformat(x)
+x = x.replace('w','g')
+printformat(x)
+
+
 
 
