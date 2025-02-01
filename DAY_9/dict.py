@@ -1,5 +1,5 @@
 # DICT CONCEPTS -> unique keys mapping to unique or same values
-
+import pprint
 def printformat(a):
     print()
     print("Data : ", a)
@@ -87,11 +87,14 @@ vardict = {i : i**3 for i in range(3)}
 # {0 : 0, 1 : 1, 2 : 8}
 print(vardict)
 vardict = {j: {i : j for i in range(3)} for j in range(3)} # 
-print(vardict)
-# {{i : j for i in range(3)}, {i : j for i in range(3)}, {i : j for i in range(3)}}
-# {{i : 0, i : 0, i : 0}, {i : 1, i : 1, i : 1}, {i : 2, i : 2, i : 2}}
-# {{0 : 0, 1 : 0, 2 : 0}, {0 : 1, 1 : 1, 2 : 1}, {0 : 2, 1 : 2, 2 : 2}}
-# {    
+pprint.pprint(vardict,indent=2)
+# vardict
+# {
+#  0: {0: 0, 1: 0, 2: 0}, 
+#  1: {0: 1, 1: 1, 2: 1}, 
+#  2: {0: 2, 1: 2, 2: 2}
+#  }
+
 #   {0:0,1:0,2:0}, | {0:0,0:1,0:2}
 #   {1:0,1:1,1:1},
 #   {1:0,1:1,1:2},
