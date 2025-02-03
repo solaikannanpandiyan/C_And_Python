@@ -106,7 +106,75 @@ print(productt(1,2,3,4,5,6))
 
 
 
-#
+# is python call by value or reference?
+print("# is python call by value or call by reference?")
+x = 10 # immutable
+y = ("hello","hi") # immutable tuple, number, string -> pass by value/data
+z = [3,2,1] # list, dict, set  -> pass by object reference
 
+print("Before passing")
+print(x) # 10
+print(y) # hello
+print(z) # [3,2,1]
+
+def change(obj1,obj2,obj3):
+    obj1 += 20
+    obj2 += (" world","")
+    obj3[2] = 5
+    print("Inside function")
+    print(obj1) # x30
+    print(obj2) # xhello world
+    print(obj3) # v[3,2,5]
+
+change(x,y,z) 
+
+print("After passing")
+print(x) # x30
+print(y) # xhello world
+print(z) # v[3,2,5]
+
+
+# unpacking
+print("# unpacking") 
+# tuple, list, set 
+# dict(key,value) -> difference
+tup = (1,2,3,4)
+print(tup) #  (1,2,3,4)
+# both are same
+print(*tup) # 1,2,3,4
+print(1,2,3,4)
+
+print("# position based")
+# tuple, set, list
+first, *tup, last = (1,2,3,4)
+# first, *tup, last = [1,2,3,4]
+# first, *tup, last = {1,2,3,4}
+print(first)
+print(tup)
+print(last)
+
+# dictory or key-value pair unpacking
+dct = {"one":"1", "two":"2", "three":"3"}
+print(*dct.items()) # set(setlike) of tuples
+print(*dct.values()) # set of any
+print(*dct.keys()) # set of hashablle, int, str, tuple
+# for k,v in dct.items:
+#     print(k,v)
+dct = {"sep":" ", "end":" "}
+print("hello","hi","good","day",**dct)# both statements are equivalent
+print("hello","hi","good","day",sep=" ", end=" ") 
+# print("hello","hi","good","day",one="1", two="2",three="3")  -> not works
+
+# # generic function in python
+print()
+print()
+print("# generic function in python")
+def genericfunc(*args, **kwargs):
+    print("args: ",args)
+    print("*args: ",*args)
+    print("args: ",kwargs)
     
-
+genericfunc(1,2.0,"hello",lst=[1,2,3],tup=(1,2,3),set={1,2,3},dct={1:1,2:2,3:3})
+genericfunc(1,2)
+genericfunc(1,2,3,x=10,y=10)
+genericfunc()
