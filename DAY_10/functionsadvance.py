@@ -51,7 +51,7 @@ def multiplier(x): # x value is in enclosing scope for function multiply
 # log all input to the funciton
 # also log all output from the function
 
-
+print("# DECORATORS")
 # without decorator approach
 # tuple variable arguments
 # def summ(*x):
@@ -71,7 +71,8 @@ def multiplier(x): # x value is in enclosing scope for function multiply
 # print(summ(1,2,3,4,5,6))
 # print(productt(1,2,3,4,5,6))
 
-
+# decorator  -> python helps us to implement easily
+# annotations -> java
 def funclogger(func): # input function | func -> enclosing scope
     
     def wrapped(*args):
@@ -82,20 +83,30 @@ def funclogger(func): # input function | func -> enclosing scope
     
     return wrapped # output function
 
+
+# is equivalent to summ = funclogger(summ) # summ function is wrapped
+@funclogger
 def summ(*x):
     return sum(x)
 
+# is equivalent toproductt = funclogger(productt) # productt function is wrapped
+@funclogger
 def productt(*x):
     prod = 1
     for i in x:
         prod *= i
     return prod
 
-# loggedsum = funclogger(summ) # summ function is wrapped
-# loggedproduct = funclogger(productt) # productt function is wrapped
+# x = 10
+# x = x+ 10
+
+# productt = funclogger(productt) # productt function is wrapped
 print(summ(1,2,3,4,5,6))
 print(productt(1,2,3,4,5,6))
 
+
+
+#
 
     
 
