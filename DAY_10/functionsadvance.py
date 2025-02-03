@@ -34,7 +34,6 @@ print("CLOSURE")
 def multiplier(x): # x value is in enclosing scope for function multiply
     # x = 5
     def multiply(y):
-        print(x)
         return x * y # x is in enclosing scope variable
     return multiply # returning function
 
