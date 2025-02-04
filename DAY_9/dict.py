@@ -38,7 +38,7 @@ vardct[1] = 'hello'
 vardct[3] = 'wow!'
 printformat(vardct)
 
-# Common Methods in List Class
+# Common Methods in Dict Class
 vardct = {"arun":1,"vimal":2,"kamal":3}
 vardct2 = {"arjun":4,"ashwin":5}
 print("keys: ",vardct.keys())
@@ -102,9 +102,72 @@ pprint.pprint(vardict,indent=2)
 
 
 # Shallow Copy
+print("# Shallow Copy")
+vardict = {j: [i for i in range(3)] for j in range(3)} # 
 
-# List Unpacking
+print(vardict)
+# {
+#  0: [0,1,2]
+#  1: [0,1,2]
+#  2: [0,1,2]
+# }
 
-# Inbuilt methods -> len, filter, map, sorted
+vardct2 = vardict.copy()
+vardct2[0][0]= "hello"
+printformat(vardict)
+# {
+#  0: ["Hello",1,2]
+#  1: [0,1,2]
+#  2: [0,1,2]
+# }
+printformat(vardct2)
+# {
+#  0: ["Hello",1,2]
+#  1: [0,1,2]
+#  2: [0,1,2]
+# }
+vardct2[3]= "wow" # copied
+# {
+#  0: ["Hello",1,2]
+#  1: [0,1,2]
+#  2: [0,1,2]
+#  3: "wow"
+# }
+printformat(vardict) # orginal
+printformat(vardct2) # copied
 
-# operations ->  |
+print("# Deep Copy")
+vardict = {j: [i for i in range(3)] for j in range(3)} # 
+# {
+#  0: [0,1,2]
+#  1: [0,1,2]
+#  2: [0,1,2]
+# }
+import copy
+vardct2 = copy.deepcopy(vardict)
+vardct2[0][0]= "hello"
+printformat(vardict) 
+printformat(vardct2)
+
+# dict Unpacking
+# dict items -> unpacking
+
+
+# Inbuilt methods -> 
+# len -> performed directly
+# filter, map, sorted -> performed on keys, values, items
+vardict = {j: [i for i in range(3)] for j in range(3)} # 
+print(len(vardict))
+print(list(sorted(vardict)))
+
+# operations ->  | -> union
+vardict = {j: [i for i in range(3)] for j in range(3)} # 
+vardict2 = {j: [i for i in range(3)] for j in range(3,7)} # 
+vardict3 = vardict | vardict2
+print(vardict3)
+
+# not possible
+# vardict3 = vardict - vardict2
+# vardict3 = vardict & vardict2
+# vardict3 = vardict ^ vardict2
+
