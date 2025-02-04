@@ -83,6 +83,7 @@ print(std1.rollno)
 print(std1.action())
 print(student.action(std1))
 
+print("# ENCAPSULATION")
 # ENCAPSULATION - python
 # not strictly enforced in python
 # data hiding -> features | no access specifier in python __
@@ -123,7 +124,7 @@ print(std2._student2__name)
 
 
 # INHERITANCE
-
+print("# INHERITANCE")
 class Animal(object): # parent class
     def walk(self):
         print("walks")
@@ -168,5 +169,62 @@ liger = Liger()
 # liger.sound() # "Liger sound"
 # liger.sound() # "Tiger sound"
 
-# 
+# POLYMORPHISM
+print("# RUNTIME POLYMORPHISM")
+
+class Dog:
+    def speak(self):
+        return "Woof"
+
+class Cat:
+    def speak(self):
+        return "Meow"
+
+def animal_sound(animal):
+    print(animal.speak())
+
+
+dog = Dog()
+cat = Cat()
+# obj = object()
+
+animal_sound(dog)  # Outputs: Woof
+animal_sound(cat)  # Outputs: Meow
+
+# not working as expected -> need to revisit
+# print("# COMPILE POLYMORPHISM")
+# class testdog:
+#     def speak(self,args):
+#         return args + "Woof"
+    
+#     def speak(self):
+#         return "dogg"
+
+# tst = testdog()
+# print(tst.speak()) 
+# print(tst.speak("")) 
+
+# type
+# Static Methods:
+class Person:
+    @staticmethod 
+    # to create static method without giving self
+    # that can be shared across objects
+    def class_method():
+        print("This is a class method.")
+        
+person  = Person()
+person.class_method() # "This is a class method."
+Person.class_method() # "This is a class method."
+person2  = Person()
+person2.class_method() # "This is a class method."
+
+# class Person2:
+#     def class_method():
+#         print("This is a class method.")
+
+# Person2.class_method() # "This is a class method."
+# person  = Person2()
+# person.class_method() # 
+
 
