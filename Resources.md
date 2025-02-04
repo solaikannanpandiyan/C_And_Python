@@ -15,6 +15,10 @@
 - [HackerRank](https://www.hackerrank.com/)
 - [LeetCode](https://leetcode.com/)
 
+## Interview Prepration Resources
+
+- [Interview Bit](https://www.interviewbit.com/technical-interview-questions/)
+
 ## AI:
 
 [DeepSeek](https://www.deepseek.com/)

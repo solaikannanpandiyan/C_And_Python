@@ -81,6 +81,9 @@ class student2:
     
     def action(self):
         return f"student name :{self.__name} studies"
+    
+    
+
 std2 = student2("arun",101)
 print(std2.action())
 print(dir(std2))
