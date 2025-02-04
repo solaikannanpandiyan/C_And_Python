@@ -84,29 +84,89 @@ print(std1.action())
 print(student.action(std1))
 
 # ENCAPSULATION - python
-# not strictly enforced
-# data hiding ->
-# access restriction/control ->
+# not strictly enforced in python
+# data hiding -> features | no access specifier in python __
+# access restriction/control -> features
+
+# python design philosphy -> everything should be visible and open to access
+class student2:
+    def __init__(self, name, rollno): # constructor
+        self.__name = name # private
+        self.__rollno = rollno # private
+        print("called inside constructor", self.action())
+        
+    def setname(self,name):
+        if not isinstance(name, str):
+            print('student name should be only string')
+        else:
+            self.__name = name
+        
+    def action(self):
+        return f"student name :{self.__name} studies"
 
 
-# class student2:
-#     def __init__(self, name, rollno):
-#         self.__name = name # private
-#         self.__rollno = rollno # private
-    
-#     # def setter(self, name, rollno):
-#     #     if not isinstance(rollno, int):
-#     #         throw Exception()
-    
-#     def action(self):
-#         return f"student name :{self.__name} studies"
-    
-    
+std2 = student2("arun",101)
+print(std2.action())
 
-# std2 = student2("arun",101)
-# print(std2.action())
-# print(dir(std2))
-# # print(dict(std2))
+# Data Hiding
+# print(std2.__name) # cannot acces since private
+# print(std2.__rollno) # cannot acces since private
+# bypass
 # print(std2._student2__name)
-# print(std2.__name)
-# # print(std2.action())
+
+# Data restriction
+std2.setname("kamal")
+print(std2._student2__name)
+# bypass
+std2._student2__name = 1
+print(std2._student2__name)
+
+
+# INHERITANCE
+
+class Animal(object): # parent class
+    def walk(self):
+        print("walks")
+        
+class Dog(Animal): # subclass or child class
+    def speak(self):
+        print("bark")
+    
+animal = Animal() 
+dog = Dog() 
+dog.walk() # v walks
+dog.speak() # v bark
+animal.walk() # v walks
+# animal.speak()  # error
+# MRO - method resolution 
+# -> current class -> left class -> right class -> ancestor
+# java multiple inheritance no
+# python mltiple inhertiance is there
+
+# diamond problem
+class Animal(): # parent class
+    # pass
+    def sound(self):
+        print("animal sound")
+
+class Tiger(Animal): # parent class
+    pass
+    # def sound(self):
+    #     print("Tiger sound")
+
+class Lion(Animal): # parent class
+    pass
+    # def sound(self):
+    #     print("Lion sound")
+
+class Liger(Tiger, Lion):
+    pass
+    #  def sound(self):
+    #     print("Liger sound")
+        
+liger = Liger()
+# liger.sound() # "Liger sound"
+# liger.sound() # "Tiger sound"
+
+# 
+
