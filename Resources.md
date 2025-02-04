@@ -15,10 +15,6 @@
 - [HackerRank](https://www.hackerrank.com/)
 - [LeetCode](https://leetcode.com/)
 
-## Interview Prepration Resources
-
-- [Interview Bit](https://www.interviewbit.com/technical-interview-questions/)
-
 ## AI:
 
 [DeepSeek](https://www.deepseek.com/)
@@ -45,6 +41,11 @@
 3. **Consistent Activity:**
    - **GitHub**: Push at least one commit daily (low-level design projects)
    - **LinkedIn**: Post every week
+
+
+## Interview Prepration Resources
+
+- [Last Minute Pdfs](https://www.interviewbit.com/technical-interview-questions/)
 
 ---
 
