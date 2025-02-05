@@ -1,7 +1,8 @@
 from abc import ABC, abstractmethod
-# Abstraction -> generally complexity hide panrathu
+# Abstraction -> generally hiding complexity and replacing simpler interface
 # backend - hiding | only need are visible | blueprint of all other class
-# 
+
+# template 
 class Shape(ABC):
     @abstractmethod
     def area(self) -> int | float:
@@ -44,12 +45,84 @@ class Rectangle(Shape):
 
 # shape = Shape()
 
-class scooty(ABC):
+class Scooty(ABC):
+    @abstractmethod
+    def accelerate():
+        pass
     
+    @abstractmethod
+    def decelerate():
+        pass
+    
+    @abstractmethod
+    def brake():
+        pass
+    
+    @abstractmethod
+    def fuel():
+        pass
 
-# association
+class TVS(Scooty):
+    def __init__(self, name):
+        self.name = name
+        
+    def accelerate(self):
+        print(f"{self.name} moves forward..")
+    
+    def decelerate(self):
+        print(f"{self.name} slow down..")
+    
+    def brake(self):
+        print(f"{self.name} stops.")
+    
+    def fuel(self):
+        print(f"{self.name} runs on petrol")
+        
+class Aether(Scooty):
+    def __init__(self, name):
+        self.name = name
+        
+    def accelerate(self):
+        print(f"{self.name} moves forward..")
+    
+    def decelerate(self):
+        print(f"{self.name} slow down..")
+    
+    def brake(self):
+        print(f"{self.name} stops.")
+    
+    def fuel(self):
+        print(f"{self.name} runs on petrol")
+    
+def printfunc(obj:Scooty):
+    obj.accelerate()
+    obj.decelerate()
+    obj.brake()
+    obj.fuel()
+    
+bike1 = TVS("Jupiter")
+bike2 = Aether("Ritz")
+printfunc(bike1)
+printfunc(bike2)
 
 
-# aggregation
+# inheritance open closed principle:
 
-# composition
+
+
+
+# a = 10
+# print(a)
+# class customint(int):
+#     def __str__(self):
+#         return f"Int type(value : {super().__str__()})"
+# b = customint(10) 
+# print(b)
+        
+
+# association -> some relationship between objects
+
+
+# aggregation -> no depency on existence
+
+# composition -> strictly dependent 
