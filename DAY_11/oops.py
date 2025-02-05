@@ -265,3 +265,18 @@ print(utitlites.findlargest(input))
 # Person.normal_method()
 
 # # class method
+print("# # class method")
+class Employee:
+    company = 'TCS'
+    @classmethod
+    def class_method(cls):
+        print("this is class method")
+        print("the company name is",cls.company)
+
+
+# different ways to call
+Employee.class_method()
+print(Employee.company)
+kamal = Employee()
+kamal.class_method()# yes it works
+# Employee.class_method(kamal)
