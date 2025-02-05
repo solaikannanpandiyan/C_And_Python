@@ -57,6 +57,9 @@
     # SQL(postgres, oracle, mysql) | NOSQL -> 4 types
     # constructor
     
+from abc import ABC, abstractmethod
+
+
 class student(object):
     def __init__(self, name, rollno): # constructor
         self.name = name # data
@@ -144,7 +147,8 @@ animal.walk() # v walks
 # java multiple inheritance no
 # python mltiple inhertiance is there
 
-# diamond problem
+# DIAMOND PROBLEM
+print("# DIAMOND PROBLEM in multiple inheritance")
 class Animal(): # parent class
     # pass
     def sound(self):
@@ -179,6 +183,11 @@ class Dog:
 class Cat:
     def speak(self):
         return "Meow"
+    
+class Lion:
+    def speak(self):
+        return "grr"
+    
 
 def animal_sound(animal):
     print(animal.speak())
@@ -186,45 +195,73 @@ def animal_sound(animal):
 
 dog = Dog()
 cat = Cat()
+lion = Lion()
 # obj = object()
 
 animal_sound(dog)  # Outputs: Woof
-animal_sound(cat)  # Outputs: Meow
+animal_sound(cat)  # Outputs: Woof
+animal_sound(lion)  # Outputs: Meow
 
 # not working as expected -> need to revisit
-# print("# COMPILE POLYMORPHISM")
-# class testdog:
-#     def speak(self,args):
-#         return args + "Woof"
+print("# COMPILE POLYMORPHISM")
+class testdog:
+    def speak(self, arg1, arg2):
+        return "Woof"
+    def speak(self, arg1):
+        return "dogg"
     
-#     def speak(self):
-#         return "dogg"
 
-# tst = testdog()
-# print(tst.speak()) 
-# print(tst.speak("")) 
 
+tst = testdog()
+print(tst.speak("one")) # dogg
+# print(testdog.__dict__)
+
+# dct = {}
+# dct["arun"] = 10
+# print(dct)
+# dct["arun"] = 20
+# print(dct)
 # type
+
 # Static Methods:
-class Person:
-    @staticmethod 
-    # to create static method without giving self
-    # that can be shared across objects
-    def class_method():
-        print("This is a class method.")
+print("# Static Methods:")
+# code organisation - usecase
+# util method
+# Arrays.sort() -> java
+class utitlites:
+    @staticmethod
+    def sort(input):
+        return sorted(input)
+    @staticmethod
+    def findsmallest(input):
+        return min(input)
+    @staticmethod
+    def findlargest(input):
+        return max(input)
+
+input = [2,3,5,1,4]
+print(utitlites.sort(input))
+print(utitlites.findsmallest(input))
+print(utitlites.findlargest(input))
+
+
+# class Person:
+#     def __init__(self, name): # constructor
+#         self.name = name
         
-person  = Person()
-person.class_method() # "This is a class method."
-Person.class_method() # "This is a class method."
-person2  = Person()
-person2.class_method() # "This is a class method."
+#     @staticmethod
+#     def static_method():
+#         print("this is a static method")
+        
+#     def normal_method(self):
+#         print("this is a normal method")
+        
+# # ways to call
+# Person.static_method()
+# vimal = Person("vimal")
+# vimal.static_method()
 
-# class Person2:
-#     def class_method():
-#         print("This is a class method.")
+# # convention
+# Person.normal_method()
 
-# Person2.class_method() # "This is a class method."
-# person  = Person2()
-# person.class_method() # 
-
-
+# # class method
