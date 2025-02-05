@@ -106,10 +106,22 @@ printfunc(bike1)
 printfunc(bike2)
 
 
-# inheritance open closed principle:
+# inheritance open-closed principle:
+# class car():
+#     def __init__(self, name):
+#         self.name = name
+        
+#     def getinfo(self):
+#         print(f"this is a {self.name}")
+    
+# class specialeditioncar(car):
+#     def __init__(self, name):
+#         self.name = "special edition " + name
 
-
-
+# cr1 = car("ferrari")
+# cr2 = specialeditioncar("ferrari")
+# cr1.getinfo()
+# cr2.getinfo()
 
 # a = 10
 # print(a)
@@ -121,8 +133,52 @@ printfunc(bike2)
         
 
 # association -> some relationship between objects
+class Author:
+    def __init__(self, name):
+        self.name = name
+
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author  # Author is associated with the Book
+
+# Creating objects
+author1 = Author("J.K. Rowling")
+book1 = Book("Harry Potter", author1)
+
+print(f"Book: {book1.title}, Author: {book1.author.name}")
+
+# aggregation
+# -> owned objects can exist independtly
+# -> ownder object will not get destroyed if parent or holder is destroyed
+print("# AGGREGATION -> no dependency on existence")
+class Department:
+    def __init__(self, name):
+        self.name = name
+        self.employees = []
+
+    def add_employee(self, employee):
+        self.employees.append(employee)
+
+class Employee:
+    def __init__(self, name):
+        self.name = name
+
+# Creating objects
+department = Department("Engineering")
+employee1 = Employee("Alice")
+employee2 = Employee("Bob")
+
+# Adding employees to the department
+department.add_employee(employee1)
+department.add_employee(employee2)
+
+print(f"Department: {department.name}")
+for emp in department.employees:
+    print(f"Employee: {emp.name}")
 
 
-# aggregation -> no depency on existence
-
-# composition -> strictly dependent 
+# composition 
+# -> owned objects cannot exist independtly
+# -> ownder object get destroyed if parent destroyed
+print("# COMPOSITION -> strictly dependent ")
