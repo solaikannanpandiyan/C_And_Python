@@ -2,6 +2,14 @@
 
 [Instant Feedback](https://thebettertomorrow.in/Students)
 
+# Assessment Python - 4 programs, HackerRank
+
+[Hackerrank Assessment](https://www.hackerrank.com/test-6-assessment)
+
+# Today Quizz - (241627)
+
+[quizz join](https://quizizz.com/join)
+
 # GeeksforGeeks Best for C:
 
 [GeeksforGeeks - C Programming](https://www.geeksforgeeks.org/c-programming-language/?ref=ghm)

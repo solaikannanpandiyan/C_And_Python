@@ -245,21 +245,23 @@ print(utitlites.findsmallest(input))
 print(utitlites.findlargest(input))
 
 
-# class Person:
-#     def __init__(self, name): # constructor
-#         self.name = name
+class Person:
+    
+    def __init__(self, name): # constructor
+        self.name = name
         
-#     @staticmethod
-#     def static_method():
-#         print("this is a static method")
+    @staticmethod
+    def static_method():
+        print("this is a static method")
         
-#     def normal_method(self):
-#         print("this is a normal method")
+    def normal_method(self):
+        print("this is a normal method")
         
-# # ways to call
-# Person.static_method()
-# vimal = Person("vimal")
-# vimal.static_method()
+# ways to call
+Person.static_method()
+vimal = Person("vimal")
+vimal.static_method()
+vimal.normal_method()
 
 # # convention
 # Person.normal_method()
@@ -272,11 +274,20 @@ class Employee:
     def class_method(cls):
         print("this is class method")
         print("the company name is",cls.company)
+        
+    def normal_method(self):
+        print("this is normal method")
+        print("the company name is",self.company)
 
 
 # different ways to call
 Employee.class_method()
 print(Employee.company)
 kamal = Employee()
+vimal = Employee()
 kamal.class_method()# yes it works
+kamal.normal_method()
+Employee.company = "CTS"
+vimal.class_method()# yes it works
+vimal.normal_method()
 # Employee.class_method(kamal)
