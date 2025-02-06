@@ -1,14 +1,15 @@
-# Better Tomorrow Feedback:
+# Better Tomorrow Feedback -> Give overall feedback:
 
 [Instant Feedback](https://thebettertomorrow.in/Students)
 
-# Assessment Python - 4 programs, HackerRank
+# Hacker Rank Platform - Test Today
 
-[Hackerrank Assessment](https://www.hackerrank.com/test-6-assessment)
+[Hacker Rank Test](https://www.hackerrank.com/contests/test-7-assessment/challenges)
 
 # Today Quizz - (241627)
 
 [quizz join](https://quizizz.com/join)
+
 
 # GeeksforGeeks Best for C:
 
