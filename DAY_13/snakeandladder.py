@@ -8,7 +8,9 @@ class Dice:
 
 
 class Player:
-    pass
+    def __init__(self, name, position):
+        self.name = name
+        self.position = position
 
 
 # ----------------- CLI Rendering -----------------
@@ -102,6 +104,27 @@ class SnakeAndLadderGame:
 # ----------------- Main -----------------
 
 if __name__ == '__main__':
-    player_names = ["Player 1", "Player 2"]
-    game = SnakeAndLadderGame(player_names)
-    game.play()
+    # player_names = ["Player 1", "Player 2"]
+    # game = SnakeAndLadderGame(player_names)
+    # game.play()
+    p1 = Player("ajay",1)
+    p2 = Player("vimal",2)
+    snakes = {
+            4: 14,
+            9: 31,
+            17: 7,
+            20: 38,
+            28: 84,
+            40: 59,
+            51: 67,
+            54: 34,
+            62: 19,
+            63: 81,
+            64: 60,
+            87: 36,
+            93: 73,
+            95: 75,
+            99: 78
+        }
+    board = CLIBoard(100)
+    board.render([p1,p2],snakes)
