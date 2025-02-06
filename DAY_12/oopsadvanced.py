@@ -221,3 +221,24 @@ for emp in department.employees:
 # -> owned objects cannot exist independtly
 # -> ownder object get destroyed if parent destroyed
 print("# COMPOSITION -> strictly dependent ")
+class Engine:
+    def __init__(self, model):
+        self.model = model
+
+    def start(self):
+        print(f"Engine {self.model} started.")
+
+class Car:
+    def __init__(self, make, engine_model):
+        self.make = make
+        self.engine = Engine(engine_model)  # The Car "owns" the Engine
+
+    def drive(self):
+        print(f"Driving {self.make} car...")
+        self.engine.start()  # Accessing engine method from Car
+
+# Creating objects
+car = Car("Tesla", "Model S")
+
+# Driving the car (which starts the engine)
+car.drive()

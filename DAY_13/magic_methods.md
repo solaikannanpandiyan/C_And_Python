@@ -54,4 +54,3 @@ Magic methods (also called **dunder methods**) in Python enable built-in behavio
 - `__delattr__(self, name)`: Called when deleting an attribute.
 - `__dir__(self)`: Controls `dir(self)`.
 
-Want a deep dive on any specific method? 🚀
