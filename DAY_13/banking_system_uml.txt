@@ -1,0 +1,112 @@
+@startuml
+' Define abstract classes with the «abstract» stereotype
+
+abstract class Account {
+  - _account_number: str
+  - _balance: float
+  + account_number: str {get}
+  + get_balance() : float
+  + deposit(amount: float)
+  + withdraw(amount: float)
+  + __str__()
+}
+
+class SavingsAccount {
+  + deposit(amount: float)
+  + withdraw(amount: float)
+  + __str__()
+}
+
+class CheckingAccount {
+  + OVERDRAFT_LIMIT: int = 100
+  + deposit(amount: float)
+  + withdraw(amount: float)
+  + __str__()
+}
+
+' Inheritance: SavingsAccount and CheckingAccount extend Account
+SavingsAccount --|> Account
+CheckingAccount --|> Account
+
+class Customer {
+  - customer_id: int
+  - name: str
+  - accounts: List<Account>
+  + add_account(account: Account)
+  + total_balance() : float
+  + __str__()
+}
+
+abstract class AbstractBank {
+  + add_customer(customer: Customer)
+  + add_account(customer_id: int, account: Account)
+  + get_account(account_number: str) : Account
+  + transfer_within_bank(from_account_number: str, to_account_number: str, amount: float)
+  + __str__()
+}
+
+class Bank {
+  - name: str
+  - customers: Dict[int, Customer]
+  - accounts: Dict[str, Account]
+  + add_customer(customer: Customer)
+  + add_account(customer_id: int, account: Account)
+  + get_account(account_number: str) : Account
+  + transfer_within_bank(from_account_number: str, to_account_number: str, amount: float)
+  + __str__()
+}
+
+' Bank implements AbstractBank
+Bank --|> AbstractBank
+
+abstract class TransactionSystem {
+  + add_bank(bank: AbstractBank)
+  + transfer_across_banks(from_bank_name: str, from_account_number: str,
+    to_bank_name: str, to_account_number: str, amount: float)
+  + __str__()
+}
+
+class BankingSystem {
+  - banks: Dict[str, Bank]
+  + add_bank(bank: AbstractBank)
+  + transfer_across_banks(from_bank_name: str, from_account_number: str,
+    to_bank_name: str, to_account_number: str, amount: float)
+  + __str__()
+}
+
+class UPITransactionSystem {
+  - banks: Dict[str, Bank]
+  + add_bank(bank: AbstractBank)
+  + transfer_across_banks(from_bank_name: str, from_account_number: str,
+    to_bank_name: str, to_account_number: str, amount: float)
+  + __str__()
+}
+
+class ATMTransactionSystem {
+  - banks: Dict[str, Bank]
+  + add_bank(bank: AbstractBank)
+  + transfer_across_banks(from_bank_name: str, from_account_number: str,
+    to_bank_name: str, to_account_number: str, amount: float)
+  + atm_withdraw(bank_name: str, account_number: str, amount: float)
+  + atm_deposit(bank_name: str, account_number: str, amount: float)
+  + __str__()
+}
+
+' Transaction systems extend the TransactionSystem abstract class
+BankingSystem --|> TransactionSystem
+UPITransactionSystem --|> TransactionSystem
+ATMTransactionSystem --|> TransactionSystem
+
+' Associations:
+' A Customer owns many Accounts.
+Customer "1" o-- "*" Account : owns
+
+' A Bank manages many Customers and Accounts.
+Bank "1" o-- "*" Customer : has
+Bank "1" o-- "*" Account : manages
+
+' Transaction systems include banks.
+BankingSystem "1" o-- "*" Bank : includes
+UPITransactionSystem "1" o-- "*" Bank : includes
+ATMTransactionSystem "1" o-- "*" Bank : includes
+@enduml

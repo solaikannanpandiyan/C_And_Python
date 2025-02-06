@@ -10,7 +10,6 @@
 
 [quizz join](https://quizizz.com/join)
 
-
 # GeeksforGeeks Best for C:
 
 [GeeksforGeeks - C Programming](https://www.geeksforgeeks.org/c-programming-language/?ref=ghm)
@@ -34,6 +33,10 @@
 - [Fireship - YouTube](https://www.youtube.com/@Fireship)
 - [Daily.dev](https://daily.dev/)
 
+# UML:
+
+- [Plant UML](https://plantuml.com/)
+
 ---
 
 ## Interview Preparation Strategy:
@@ -50,7 +53,6 @@
 3. **Consistent Activity:**
    - **GitHub**: Push at least one commit daily (low-level design projects)
    - **LinkedIn**: Post every week
-
 
 ## Interview Prepration Resources
 
