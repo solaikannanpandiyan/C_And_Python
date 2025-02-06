@@ -2,13 +2,16 @@
 
 [Instant Feedback](https://thebettertomorrow.in/Students)
 
+# Better Tomorrow LinkedIn
+
+[Better Tomorrow LinkedIn](https://www.linkedin.com/company/better-tomorrow-training-institute/p)
+
 # Hacker Rank Platform - Test Today
 
 [Hacker Rank Test](https://www.hackerrank.com/contests/test-7-assessment/challenges)
 
-# Today Quizz - (241627)
-
-[quizz join](https://quizizz.com/join)
+# Teaching Personal Feedback - Solaikannan Pandiyan
+[Personal Feedback - Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdoqzA-BH6jHSfp_-fDDf2aZRZZ5CFOHkeGQNygvl4UWFHHAQ/viewform?usp=preview)
 
 # GeeksforGeeks Best for C:
 
@@ -62,7 +65,7 @@
 
 ## High-Level Design:
 
-To be covered separately.
+Not required much for beginner
 
 ---
 
@@ -71,7 +74,7 @@ To be covered separately.
 1. Store it in the cloud (Google Drive, Docs, etc.)
 2. Use tools like Novoresume, Google Docs, or Canva
 3. Use ChatGPT or an LLM to optimize for ATS
-4. Don't obsess over the resume—it can be a bottomless pit
+4. Don't obsess over the resume — it can be a bottomless pit
 5. **Structure:**
    - Summary
    - Skill Set
